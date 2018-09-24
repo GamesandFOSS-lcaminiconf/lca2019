@@ -105,7 +105,7 @@ function update() {
 
     if(canvas.width !== innerWidth){
         canvas.width = innerWidth;
-        //var width = innerWidth; -- this line does something funky and I need to find out why
+        //var width = innerWidth; // this line does something funky and I need to find out why
         boxes[1] = ({
             x: 0,
             y: height - 2,
