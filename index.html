@@ -1,28 +1,31 @@
 <html>
 <head>
-  <title>Art+Tech Miniconf at linux.conf.au 2019</title>
+  <title>Games and FOSS Miniconf at linux.conf.au 2019</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link href="site.css" rel="stylesheet">
   <script src="https://unpkg.com/overprint@0.6.0/overprint.js"></script>
-  <script src="truchet.js"></script>
+  <!--script src="truchet.js"></script-->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:creator" content="@maetl">
-  <meta name="og:title" content="Art+Tech Miniconf at LCA2019">
-  <meta name="og:description" content="Single-day, single-track miniconf exploring the creative and expressive uses of technology.">
-  <meta name="og:url" content="https://artandtech-miniconf.github.io/lca2019/">
+  <meta name="twitter:creator" content="@ducky_tape">
+  <meta name="og:title" content="Games and FOSS Miniconf at LCA2019">
+  <meta name="og:description" content="Single-day, single-track miniconf discussing the pros and cons, the why's and why nots of Games and FOSS.">
+  <meta name="og:url" content="https://gamesandFOSS-lcaminiconf.github.io/lca2019/">
+  <!--TO DO: Games Promo Card-->
   <meta name="og:image" content="https://artandtech-miniconf.github.io/lca2019/promo-card.png">
 </head>
 <body>
 
 <div class="spread spread-cover">
   <header>
-    <h1><span class="highlight">Art+Tech Miniconf</span></h1>
+    <h1><span class="highlight">Games and FOSS Miniconf</span></h1>
     <h2><span class="highlight">linux.conf.au 2019</span></h2>
   </header>
   <figure>
-    <canvas id="truchet-tiles"></canvas>
+    <!--style="border:1px solid #000"-->
+    <canvas id="canvas"></canvas>
+    <script src="headergame.js"></script>
   </figure>
 </div>
 
@@ -37,44 +40,101 @@
 
   <div class="text">
     <h2>Ngā Mihi / Introduction</h2>
-    <p>Open sharing of methods and materials has been a part of art-making around the world since the invention of pigments for painting the walls of caves.</p>
-    <p>Today, technology is expanding the boundaries of art in ways that were previously unimaginable. Open source hardware and software has become a foundational building block for a new wave of creative practices, enabling artists and inventors to stand on the shoulders of giants to build on top of emerging platforms, incorporate generative methods and even invent our own tools.</p>
-    <p>As part of <a href="https://linux.conf.au/">linux.conf.au 2019</a>, we are presenting this single-day, single-track miniconf, exploring the creative and expressive uses of technology to make things that are beautiful, interesting, surprising and sometimes even useful.</p>
+    <p>Start your game neurons firing, we're back! Returning for the third time in a row, it's the linux.conf.au Games Miniconf.</p>
+    <p>FOSS and games have been getting closer and closer for a while now, but there is still more to do!</p>
+    <p>Games are now gobbling up the attention of people at a rate never before seen, and FOSS is the lingua franca of the software world.
+      Yet we are still only learning how the two can work together. Despite an overlap amongst developers and users, for the most part the game developers and players hide in their silo and FOSS hide in theirs.
+      We're getting the band back together for another look at what we can learn from each other.</p>
+    <p>This miniconf will be a single day exploring the interaction of games, free and open source software, and their communities and developers.
+      If you've got a passion for game development, FOSS, community, or playing games then this miniconf will be of interest to you.</p>
+
     <h2>Call for Proposals</h2>
-    <p>We’re looking for proposals from artists, engineers, scientists, designers, crafters and hobbyists who are using open source technologies and creating interesting things in areas such as:</p>
+    <p>We are inviting talks on anything that looks into the interaction between games and game development and free and open source software.
+      Potential talk topics include (but are not limited to):</p>
     <ul>
-      <li>computational creativity</li>
-      <li>generative and data-driven art</li>
-      <li>audio synthesis and music production</li>
-      <li>videogames, art toys and interactive fiction</li>
-      <li>textiles, fashion design, crafting</li>
-      <li>technology in indigenous arts</li>
-      <li>augmented, mixed, and virtual reality</li>
-      <li>3-D printing, electronics, robotics</li>
+      <li>Fully Open Source or Free games</li>
+      <li>Free and Open Source game engines and tools</li>
+      <li>Pros and cons of using the above</li>
+      <li>Legal or business implications of game development using FOSS</li>
+      <li>The history of Open Source in games and game development</li>
+      <li>Open sourcing your game</li>
+      <li>Creating open hooks into proprietary games</li>
+      <li>Diversity in open source and game development, what we can learn from each other</li>
+      <li>What the FOSS and LCA community can learn from the game developers</li>
+      <li>What game developers can learn from the LCA and FOSS community</li>
+      <li>Open game hardware and peripherals</li>
+      <li>Playing games on open hardware and platforms</li>
+      <li>Community management and interaction difference between the FOSS and games community</li>
+      <li>Open source art and music for games</li>
+      <li>FOSS and board games.</li>
+      <li>...and anything FOSS and Game related you can think of!</li>
     </ul>
-    <h2>Exhbition</h2>
-    <p>Alongside the talks, we are planning a pop-up exhibition of artworks and projects from the miniconf speakers, giving conference attendees an opportunity to explore the works up close and talk to the artists and makers.</p>
-    <h2>Submissions</h2>
-    <p>Submission guidelines and final dates will be announced soon, when we open the call for proposals. Submissions will be accepted via the <a href="https://linux.conf.au/">linux.conf.au</a> website.</p>
+
+    <h2>Presentation Formats</h2>
+    <p>We are now open for talk submissions. We have openings for:</p>
+    <ul>
+      <li>15 minute presentations</li>
+      <li>30 minute presentations</li>
+      <li>5 minute demos and micro-talks</li>
+      <li>Panels and other Discussion formats</li>
+      <li>Workshops and tutorials</li>
+      <li>… Can’t see a format here that interests you? Tell us what you want to do! We’re more than open to allowing more creativity in our running sheet.Whether that means you want to turn the miniconf into an escape room, or present a talk in interpretive dance, we want to hear from you!</li>
+    </ul>
+    <p>If you’re looking for extra advice or want to chat about an idea before submitting you can always <a href="mailto:games@lca.lonely.coffee">email us</a>. We’re excited to hear from you!</p>
+    <h3>Demos</h3>
+    <p>We are also after people willing to set up games to let people play with during the lunch break.</p>
+
+    <h2>Submissions: Who and How</h2>
+    <p>Submission are not yet open, but final dates will be announced very soon, with submission closing sometime in November</p>
+    <p>To submit your presentations please use the <a href="https://linux.conf.au">linux.conf.au</a> submission system.
+      If you are submitting a demo of a game, tool, or project make sure in your submission you send us a link where we will be able to preview it, otherwise we won't be able to approve it.</p>
+    <p>We strongly encourage first-time and seasoned speakers from all walks of life – all ages, genders, nationalities, ethnicities, backgrounds, religions, and abilities.
+      Like the main LCA conference, we respect and encourage diversity at our miniconf.
+      If you would like any assistance with creating a proposal, don't hesitate to ask one of the organisers.</p>
+
     <h2>Tickets &amp; Financial Assistance</h2>
-    <p><a href="https://linux.conf.au/">linux.conf.au</a> is a community run conference. All presenters are required to purchase a ticket to attend. We are working with the organisers to potentially make a ‘miniconf only’ ticket available but we are unable to confirm this yet.</p>
-    <p>There may also be limited financial assistance available to cover expenses for speakers. We will try to accommodate as many requests for assistance as possible within our limited budget.</p>
+    <p>Please note, <a href="https://linux.conf.au/">linux.conf.au</a> is a community run conference.
+      To present or attend the miniconf you will need to be a registered attendee of LCA.
+      We understand this is not as easy to do for all people, and we ask that if you don’t think you can do this,
+      please <a href="mailto:games@lca.lonely.coffee">contact us</a>. We would love to look at ways to help you attend.
+      Your attendance and involvement is very important to us, and we want to help you be there!
+    <p>There are also usually miniconf only tickets available that are significantly cheaper than whole conference tickets,
+      but we really recommend you attend the entire conference as there are amazing people in attendance,
+      and it would be a shame to miss them and the great experience that linux.conf.au can be.
+      We wouldn’t want you to miss more novel ways we can bring FOSS and Games together!</p>
+
+    <h2> Dates and Deadline</h2>
+    <p>To be confirmed soon!</p>
+    <ul>
+      <li>11-11-2018 - Deadline for submissions</li>
+      <li>19-11-2018 - Confirmation of presentations</li>
+      <li>2X-01-2019 - Games and FOSS Miniconf Day!</li>
+    </ul>
+
     <h2>Organisers &amp; Contact</h2>
-    <p>The 2019 Art+Tech Miniconf is run by <a href="https://maetl.net/">Mark Rickerby</a> / <a href="https://twitter.com/maetl">@maetl</a> and <a href="https://www.krishoward.org/">Kris Howard</a> / <a href="https://twitter.com/web_goddess">@web_goddess</a>.</p>
-    <p>Contact us via email at <a href="mailto:me@maetl.net">me@maetl.net</a>.</p>
+    <p>If you have any questions or need to get in contact with us, please don't hesitate to! We look forward to chatting.</p>
+    <p>You can find our friendly organisers on twitter: <a href="https://linkedin.com/in/eloiseducky">Eloise Ducky</a> / <a href="https://twitter.com/ducky_tape">@ducky_tape</a> and <a href="https://www.lonely.coffee/">Tim Nugent</a> / <a href="https://twitter.com/The_McJones">@The_McJones</a>.
+    <p>Or Contact us via email at <a href="mailto:games@lca.lonely.coffee">games@lca.lonely.coffee</a>.</p>
+
   </div>
 </div>
 
 <div class="cols highlights">
   <div class="panel">
-    <div class="blocks">
+    <div class="blocks" id="flare">
       <span></span>
     </div>
   </div>
   <div class="text">
     <h2>2018 Highlights</h2>
-    <p>Highlights from the inaugural Art+Tech Miniconf in Sydney. You can browse live tweets from the day under the <a href="https://twitter.com/search?f=tweets&vertical=default&q=%23lca2018%20%23artandtech&src=typd">#lca2018 #artandtech</a> hashtags and <a href="https://www.youtube.com/playlist?list=PLAObS6o1v0zKRBoEwPD6YreMfGFvh6zdM">watch videos of the talks</a>.</p>
+    <p>Highlights and information from past the Games and FOSS miniconfs. You can browse tweets from and about the miniconf under the <a href="https://twitter.com/search?f=tweets&vertical=default&q=%23lcagm&src=typd">#lcagm</a> hashtag and <a href="https://www.youtube.com/playlist?list=PLVEP62k26ip5qYU6Vk45rCGafZ51UUBu9">watch past videos of the talks</a>.</p>
   </div>
+  <div class="videos">
+      <iframe title="Youtube playlist of available Presentations from the 2018 Games and FOSS Miniconf" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLVEP62k26ip6wftuWafKB75024K9kTGks" frameborder="20" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe title="Youtube playlist of available Presentations from the 2017 Games and FOSS Miniconf"width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLVEP62k26ip6B1y_myKbvHRcjb4MYRuzy" frameborder="20" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe title="Youtube playlist of all available Presentations lca Games and FOSS Miniconfs"width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLVEP62k26ip5qYU6Vk45rCGafZ51UUBu9" frameborder="20" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
   <div class="highlights-row">
     <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Absolutely astonishing talk from Animal Logic on their work on Guardians of the Galaxy 2. <a href="https://twitter.com/hashtag/lca2018?src=hash&amp;ref_src=twsrc%5Etfw">#lca2018</a> <a href="https://twitter.com/hashtag/artandtech?src=hash&amp;ref_src=twsrc%5Etfw">#artandtech</a> <a href="https://t.co/FYp2KtKLfc">pic.twitter.com/FYp2KtKLfc</a></p>&mdash; Secret Lab (@thesecretlab) <a href="https://twitter.com/thesecretlab/status/955643666126667777?ref_src=twsrc%5Etfw">January 23, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <blockquote class="twitter-tweet"><p lang="und" dir="ltr">🎨 <a href="https://twitter.com/hashtag/lca2018?src=hash&amp;ref_src=twsrc%5Etfw">#lca2018</a> <a href="https://twitter.com/hashtag/artandtech?src=hash&amp;ref_src=twsrc%5Etfw">#artandtech</a> <a href="https://twitter.com/minxdragon?ref_src=twsrc%5Etfw">@minxdragon</a> <a href="https://t.co/F8iDgpEQtE">pic.twitter.com/F8iDgpEQtE</a></p>&mdash; Katie McLaughlin ✨ (@glasnt) <a href="https://twitter.com/glasnt/status/955597672378859520?ref_src=twsrc%5Etfw">January 23, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -84,6 +144,38 @@
     <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">One of the challenges of embroidering bitmaps is mapping available wool colours to your RGB values. <a href="https://twitter.com/hashtag/lca2018?src=hash&amp;ref_src=twsrc%5Etfw">#lca2018</a> <a href="https://twitter.com/hashtag/artandtech?src=hash&amp;ref_src=twsrc%5Etfw">#artandtech</a> <a href="https://t.co/0qTiIyfogI">pic.twitter.com/0qTiIyfogI</a></p>&mdash; Secret Lab (@thesecretlab) <a href="https://twitter.com/thesecretlab/status/955692581391757312?ref_src=twsrc%5Etfw">January 23, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">OMG I WANT ALL <a href="https://twitter.com/HeartOfPluto_?ref_src=twsrc%5Etfw">@HEARTOFPLUTO_</a>’s KNITTED THINGS <a href="https://twitter.com/hashtag/LCA2018?src=hash&amp;ref_src=twsrc%5Etfw">#LCA2018</a> <a href="https://twitter.com/hashtag/artandtech?src=hash&amp;ref_src=twsrc%5Etfw">#artandtech</a> <a href="https://t.co/9fF2D4d7cy">pic.twitter.com/9fF2D4d7cy</a></p>&mdash; Russell Keith-Magee (@freakboy3742) <a href="https://twitter.com/freakboy3742/status/955654974729469952?ref_src=twsrc%5Etfw">January 23, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve had to grapple with materials questions before for e-textiles projects. Never had to worry about people eating off it though! <a href="https://twitter.com/hashtag/artandtech?src=hash&amp;ref_src=twsrc%5Etfw">#artandtech</a> <a href="https://twitter.com/hashtag/lca2018?src=hash&amp;ref_src=twsrc%5Etfw">#lca2018</a> 🖼️❤️💻 <a href="https://twitter.com/currawongwhsper?ref_src=twsrc%5Etfw">@currawongwhsper</a> <a href="https://t.co/5UQYBJHnS1">pic.twitter.com/5UQYBJHnS1</a></p>&mdash; Kris Howard 💃 (@web_goddess) <a href="https://twitter.com/web_goddess/status/955672640106020864?ref_src=twsrc%5Etfw">January 23, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
+  <div class="text">
+    <h2>FAQ</h2>
+    <p>If you have any questions you can always <a href="mailto:games@lca.lonely.coffee">email us</a>;
+      Ducky and Tim are excited to meet you and help you in your Games and FOSS quest!
+      However, if you want some reading first we've put this FAQ together, just for you.
+      If you think something is missing, please message us and we'll update it as soon as we can.</p>
+    <div class="FAQ">
+      <h3>What is FOSS?</h3>
+      <p>FOSS means Free and Open Source Software. These are two very similar terms, but have some differences.</p>
+
+      <h3>So, what’s Free Software?</h3>
+      <p><a href="https://www.fsf.org/about/what-is-free-software">The FSF (Free Software Foundation)</a> defines it as being software that ensures that the end users have freedom in using, studying, sharing and modifying that software.</p>
+
+      <h3>And, Open Source Software?</h3>
+      <p>The term "open source" refers to something people can modify and share because its design is publicly accessible (<a href="https://opensource.com/resources/what-open-source">opensource.com</a>). There is more available and comprehensive information about the definition of Open Source at the <a href="https://opensource.org/osd">Open Source Initiative's site</a>.</p>
+
+      <h3>What are games?</h3>
+      <p>Wow, straight to the tough questions! Games can be loosely defined as an activity that you can engage in for amusement or entertainment, but even this broad definition doesn’t necessarily apply to all games. For the purposes of this conference we’re leaving this in your hands. If you believe it’s a game, we’re here to listen! However, it might be useful to remember all organisers, talks, and attendees must agree and adhere to the Code of Conduct to participate in any part of <a href="https://linux.conf.au">linux.conf.au</a>.</p>
+
+      <h3>This conference has something to do with computers, so does that mean this is about computer games?</h3>
+      <p>Definitely not! We are open to and very very excited to hear about all forms of games! Physical games, Tabletop/Board Games, Escape rooms, Console games, Handheld console games, retro games, mobile games, arcade games, computer games, and any other combination or type of games you can think of. They’re all welcome here and we’re excited to find out how FOSS fits or doesn’t fit (and why) with them.</p>
+
+      <h3>This sounds great, but I’m not sure I can get there due to accessibility, financial, or other reasons. What can I do?</h3>
+      <p>Don’t worry, there are a few options we can look at here!</p>
+      <p>First if you really want to come and especially if you have submitted a presentation of some sort, please email the organisers. We would love to look at how we can help you attend. We’re not here to pry, but if you can tell us what you need to be able to attend, we will look into it for you. We want to make it as easy as possible, within our means, for you to be able to share in the Games and FOSS discussion.</p>
+      <p><a href="https://linux.conf.au">linux.conf.au</a> usually also opens up a financial assistance application at some stage. It’s been a great program in the past and we are sure it will continue that reputation.</p>
+      <p><a href="mailto:games@lca.lonely.coffee">Please email us</a> even if you think it’s a long shot. We believe in you!
+
+      <h3>Still sounding awesome, but I’m not sure what I have to contribute?</h3>
+      <p>As we said, WE BELIEVE IN YOU! You can <a href="mailto:games@lca.lonely.coffee">email us</a> anytime and we can do what we can to help you out with inspiration. We also have a whole several conferences before this one’s bunch of material. We’ve prepared some playlists and links to help get you excited and inspired for 2019. It’s important you know that just because you want to do something similar to what has been presented in the past, does not mean you should not submit it! We all have our own unique takes and give our own flavours to things, so we still want to hear your ideas!</p>
   </div>
 </div>
 

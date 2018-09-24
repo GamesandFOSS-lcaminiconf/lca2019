@@ -16,6 +16,7 @@ body {
   width: 100vw;
   height: 50vh;
   overflow: hidden;
+  max-width:100%;
 }
 
 .spread-cover h1 {
@@ -101,6 +102,10 @@ body {
   padding: 2em;
 }
 
+.highlights h3 {
+  margin-top: 50px;
+}
+
 @media(min-width: 900px) {
   .text {
     width: 48vw;
@@ -162,6 +167,10 @@ body {
   border-top: 0.512em solid #0f7c11;
 }
 
+.videos {
+  margin: 0 auto;
+}
+
 @media(min-width: 900px) {
   .highlights h2 {
     margin-top: 1em;
@@ -172,22 +181,40 @@ body {
   display: none;
 }
 
+@media(min-width: 1710px) {
+  .videos {
+    margin: 0 auto;
+  }
+}
+@media(max-width: 1712px) {
+  iframe {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 @media(min-width: 900px) {
   .highlights .panel {
     display: block;
   }
 
   .highlights .blocks span {
-    transform: skewY(-45deg);
+    /*transform: skewY(-45deg);*/
     transform-origin: 0;
     height: 1.563em;
+  }
+
+  .blocks#flare span{
+    transform: skewY(-45deg);
   }
 }
 
 .highlights-row {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
+
 
 @media(max-width: 640px) {
   .highlights-row {
