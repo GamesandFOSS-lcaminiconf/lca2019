@@ -102,6 +102,10 @@ body {
   padding: 2em;
 }
 
+.highlights h3 {
+  margin-top: 50px;
+}
+
 @media(min-width: 900px) {
   .text {
     width: 48vw;
